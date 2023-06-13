@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Network Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pulse.svg" type="image/svg+xml">
+</head>
+<html>
+<body>
+    <form method="post">
+        <label for="ssid">SSID (network name):</label><br>
+        <input type="text" id="ssid" name="ssid"><br>
+        <label for="password">password:</label><br>
+        <input type="text" id="password" name="password"><br>
+        <label for="address">mDNS address (without .local):</label><br>
+        <input type="text" id="address" name="address"><br>
+        <p>Type of connection:</p>
+        <input type="radio" id="dynamic" name="addr_type" value="dynamic">
+        <label for="dynamic">Dynamic IP</label><br>
+        <input type="radio" id="static" name="addr_type" value="static" checked="true">
+        <label for="static">Static IP (recommended)</label><br>
+        <br>
+        <label for="ipaddr">IP address:</label><br>
+        <input type="text" id="ipaddr" name="ipaddr"><br>
+        <label for="gateway">gateway:</label><br>
+        <input type="text" id="gateway" name="gateway"><br>
+        <label for="mask">mask:</label><br>
+        <input type="text" id="mask" name="mask" value="255.255.255.0"><br>
+        <br>
+        <button id="submitButton" value="Confirm">Confirm</button>
+    </form>
+    <p>After pressing "Confirm", the device will reset.
+    <script src="network_setup.js"></script>
+    
+</body>
+</html>

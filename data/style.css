@@ -1,0 +1,26 @@
+html {
+    font-family: Helvetica;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.buttonImg {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.controlElement {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: "#ADD8E6";
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
